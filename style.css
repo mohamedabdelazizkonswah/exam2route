@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(29, 26, 26);
+}
+
+.row2 {
+    margin-top: 30px;
+}
+
+/*model*/
+.modal {
+    --bs-modal-width: 800px;!important
+}
+
+/* sidebar */
+.strip-header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 55555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+
+}
+
+.strip-logo {
+    padding: 25px 0;
+}
+
+.strip-logo img {
+    height: 48px;
+}
+
+.strip-toggel-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.strip-toggel-menu i {
+    font-size: 35px;
+}
+
+.strip-toggel-menu:hover {
+    cursor: pointer;
+    color: #ff655c !important;
+    transition: all 0.3s;
+}
+
+.strip-social-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 11;
+}
+
+.strip-social-icon i:hover {
+    cursor: pointer;
+    color: #ff655c !important;
+    transition: all 0.3s;
+}
+
+.strip-social-icon>div {
+    padding-top: 10px
+}
+
+.nav-tab-menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 5555;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: all 0.6s ease;
+
+}
+
+.open-menu {
+    transform: scale(1) !important;
+}
+
+.close-menu {
+    transform: translateX(-100%) !important;
+}
+
+.close-search {
+    transform: translateX(100%) !important;
+}
+
+.nav-tab-menu ul {
+    padding-left: 30px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.nav-tab-menu li {
+    list-style: none;
+    padding-top: 500px;
+    opacity: 0;
+}
+
+.nav-tab-menu ul li a {
+    text-decoration: none;
+    color: #f9f6f6;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all ease-in-out;
+}
+
+.nav-tab-menu ul li a:hover,
+.nav-social-item a:hover {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: #ff655c !important;
+    transition: all 0.3s;
+}
+
+.nav-social-item {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+}
+
+.nav-social-item a {
+    color: #f9f6f6;
+    padding-left: 15px;
+    font-size: 18px;
+    transition: all ease;
+}
+
+.nav-social-item a:hover {
+    font-size: 24px;
+}
+
+.nav-social-item span {
+    color: #999;
+}
+
+/* Post */
+.post-section {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.post {
+    position: relative;
+    margin: 5px 0px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #63614e;
+}
+
+.overlay a {
+    text-decoration: none;
+}
+
+.overlay:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.overlay a:hover {
+    opacity: 1;
+    color: rgb(140, 185, 224);
+}
+
+.post-title {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* contact */
+.container2 {
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: transparent;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form-control {
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    margin-left: 15px;
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #22221f;
+    border: 2px solid #f1ee2e;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form button:hover {
+    background-color: #9c9a29;
+}
